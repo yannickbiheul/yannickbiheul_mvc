@@ -40,8 +40,13 @@ a {
     font-size: 1rem;
 }
 
-.bouton > a:hover {
+.bouton:hover {
     background-color: var(--blue2);
+}
+
+.bouton > a {
+    color: #fff;
+    text-decoration: none;
 }
 
 /* VARIABLES */
@@ -70,3 +75,55 @@ a {
     --orange2: #e67e22;
 }
 
+/* SECTIONS */
+
+#blue_section {
+    position: relative;
+    background-image: var(--bgBlue);
+    color: #fff;
+    min-height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blue_section > h3 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    /* transform: translateX(-50%); */
+    color: #fff;
+}
+
+#white_section {
+    position: relative;
+    min-height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding-top: 40px;
+    background-image: var(--bgWhite);
+}
+
+#white_section > h3 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #000;
+}
+
+#white_section > a {
+    text-decoration: none;
+    color: #000;
+}
+
+@media screen and (max-width: 1200px) {
+    #blue_section {
+        flex-direction: column;
+        /* padding: 80px 0 120px 0; */
+    }
+}

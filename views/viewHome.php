@@ -62,8 +62,9 @@ ob_start();
 
                                         <!-- DIPLOMES -->
 
-<section id="diplomes">
-    <h1>Diplômes</h1>
+<section id="blue_section" class="diplomes">
+    <h3 id="diplomes"></h3>
+    
     <?php
         foreach ($diplomes as $diplome) {
     ?>
@@ -85,42 +86,15 @@ ob_start();
         }
     ?>
 
-    <!-- <a class="bouton" href="#modal_certificats">Certificats</a> -->
+    <a href="#">Certificats</a>
     
 </section>
 
 
-                                        <!-- MODAL CERTIFICATS -->
-
-<div id="modal_certificats" class="modal">
-    <div class="modal_content">
-        
-        <?php
-            foreach ($certificats as $certificat) {
-        ?>
-            <div class="carte_certificats">
-                <h3><?= $certificat['nom'] ?></h3>
-                <small>
-                    <?php
-                        $date = date_create($certificat['date_obtention']);
-                        echo "Le " . date_format($date, 'd-m-Y');
-                    ?>
-                </small>
-                <p><?= $certificat['etablissement'] ?></p>
-            </div>
-        <?php
-            }
-        ?>
-        
-        <a href="#diplomes" class="modal_close">&times;</a>
-    </div>
-</div>
-
-
                                         <!-- EXPERIENCES -->
 
-<section id="experiences">
-    <h1>Expériences</h1>
+<section id="white_section">
+    <h3 id="experiences"></h3>
     <?php
         foreach ($experiences as $experience) {
     ?>
@@ -158,8 +132,8 @@ ob_start();
 
                                         <!-- RÉSEAUX -->
 
-<section id="reseaux">
-    <h1>Réseaux</h1>
+<section id="blue_section">
+    <h3 id="reseaux"></h3>
         <div class="socials" data-aos="fade-down" data-aos-duration="2000">
             <?php
                 foreach ($socials as $social) {
@@ -173,8 +147,8 @@ ob_start();
 
                                         <!-- PORTFOLIO -->
 
-<section id="portfolio">
-    <h1>Portfolio</h1>
+<section id="white_section">
+    <h3 id="portfolio"></h3>
     <?php
         foreach ($projets as $projet) {
     ?>
@@ -198,8 +172,8 @@ ob_start();
 
                                         <!-- GAMES -->
 
-<section id="video-games">
-    <h1>Jeux Vidéo</h1>
+<section id="blue_section">
+    <h3 id="video-games"></h3>
     <div class="games" data-aos="fade-down" data-aos-duration="2000">
         <?php
             foreach ($games as $game) {
@@ -217,8 +191,8 @@ ob_start();
 
                                         <!-- CONTACT -->
 
-<section id="contact">
-    <h1>Contact</h1>
+<section id="white_section">
+    <h3 id="contact"></h3>
     <div class="contact1" data-aos="fade-up" data-aos-duration="2000">
         <?php
             foreach ($infos as $info) {

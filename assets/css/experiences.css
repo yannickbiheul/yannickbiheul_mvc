@@ -1,29 +1,3 @@
-#experiences {
-    position: relative;
-    min-height: 400px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
-    padding-top: 40px;
-    background-image: var(--bgWhite);
-}
-
-#experiences > h1 {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    color: #000;
-}
-
-#experiences > h2 {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-
 .experience {
     width: 300px;
     display: flex;

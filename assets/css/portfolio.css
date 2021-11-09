@@ -1,21 +1,3 @@
-#portfolio {
-    position: relative;
-    background-image: var(--bgWhite);
-    padding: 40px 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-#portfolio > h1 {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    color: #000;
-}
-
 .projets {
     display: flex;
     justify-content: center;
