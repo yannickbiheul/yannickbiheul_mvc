@@ -1,0 +1,76 @@
+#portfolio {
+    position: relative;
+    background-image: var(--bgWhite);
+    padding: 40px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#portfolio > h1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #000;
+}
+
+.projets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.carte-projet {
+    width: 300px;
+    height: 300px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px 200px 50px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px #ccc;
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.projet-titre {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projet-image {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+.projet-image > img {
+    width: 100%;
+}
+
+.projet-bouton {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projet-bouton > a {
+    padding: 10px;
+    background-color: var(--blue1);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px #ccc;
+}

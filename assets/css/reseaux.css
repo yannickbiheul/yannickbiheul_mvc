@@ -1,0 +1,52 @@
+#reseaux {
+    position: relative;
+    background-image: var(--bgBlue);
+    color: #fff;
+    min-height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#reseaux > h1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.socials > a {
+    color: #fff;
+    font-size: 3rem;
+    margin: 60px;
+}
+
+
+
+/* @media screen and (max-width: 1200px) {
+    #reseaux {
+        flex-direction: column;
+    }
+
+    .socials {
+        padding-right: 0;
+    }
+
+    .games {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #reseaux {
+        padding: 40px;
+    }
+} */

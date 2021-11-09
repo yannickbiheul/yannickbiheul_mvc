@@ -1,0 +1,45 @@
+#video-games {
+    position: relative;
+    background-image: var(--bgBlue);
+    color: #fff;
+    min-height: 400px;
+    padding-top: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#video-games > h1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+}
+
+.games {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.games > a {
+    color: #fff;
+    font-size: 3rem;
+    margin: 60px;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 40px;
+}
+
+.game > i {
+    font-size: 3rem;
+    margin: 10px 0;
+}
