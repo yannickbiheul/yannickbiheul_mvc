@@ -22,7 +22,7 @@ ob_start();
         }
     ?>
     <div class="bouton">
-        <a href="index.php?action=home" style="margin: 40px;">Retourner sur le site</a>
+        <a href="index.php?action=home">Retourner sur le site</a>
     </div>
     
 

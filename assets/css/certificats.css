@@ -1,11 +1,14 @@
 #certificats {
     width: 100%;
     min-height: 100vh;
+    padding: 20px 0;
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
+    background-image: var(--bgBlue);
 }
 
 .certificat {
@@ -14,11 +17,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #000;
+
+    background-image: radial-gradient(circle at 30% 94%, rgba(245, 245, 245,0.06) 0%, rgba(245, 245, 245,0.06) 50%,rgba(21, 21, 21,0.06) 50%, rgba(21, 21, 21,0.06) 100%),radial-gradient(circle at 59% 19%, rgba(248, 248, 248,0.06) 0%, rgba(248, 248, 248,0.06) 50%,rgba(87, 87, 87,0.06) 50%, rgba(87, 87, 87,0.06) 100%),radial-gradient(circle at 7% 11%, rgba(148, 148, 148,0.06) 0%, rgba(148, 148, 148,0.06) 50%,rgba(254, 254, 254,0.06) 50%, rgba(254, 254, 254,0.06) 100%),linear-gradient(90deg, rgb(189, 189, 189),rgb(205, 205, 205));
 
     margin: 40px;
     text-align: center;
-    border: 1px solid #ccc;
+    border: 1px solid #000;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 2px 2px 4px #ccc;
+    box-shadow: 2px 2px 4px #000;
+}
+
+.certificat > hr {
+    width: 50%;
+    margin: 10px 0;
 }
