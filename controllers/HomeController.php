@@ -17,7 +17,6 @@ class HomeController {
         $texte = $this->homeDao->getText();
         $diplomes = $this->homeDao->getDiplomes();
         $experiences = $this->homeDao->getExp();
-        $certificats = $this->homeDao->getCertifs();
         $socials = $this->homeDao->getSocials();
         $games = $this->homeDao->getGames();
         $projets = $this->homeDao->getProjets();
@@ -28,5 +27,10 @@ class HomeController {
     public function sendMessage() {
         $message = $this->homeService->checkMessage($_POST);
         header('Location: \\');
+    }
+
+    public function showCertificats() {
+        $certificats = $this->homeDao->getCertifs();
+        require('views/viewCertificats.php');
     }
 }

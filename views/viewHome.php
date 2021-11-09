@@ -86,7 +86,7 @@ ob_start();
         }
     ?>
 
-    <a href="#">Certificats</a>
+    <a href="index.php?action=showCertificats">Certificats</a>
     
 </section>
 
