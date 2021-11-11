@@ -23,15 +23,10 @@ class HomeService {
                 array_push($message, htmlspecialchars($post['nom']));
             }
 
-            $arrayEmail = explode("", $post['email']);
-            if ($arrayEmail[count($arrayEmail) - 1] . $arrayEmail[count($arrayEmail)] == "ru") {
-                $errors = "Adresse non valide";
+            if (strlen($post['email']) < 3) {
+                $errors = "Il me faut plus de 3 lettres pour l'email !";
             } else {
-                if (strlen($post['email']) < 3) {
-                    $errors = "Il me faut plus de 3 lettres pour l'email !";
-                } else {
-                    array_push($message, htmlspecialchars($post['email']));
-                }
+                array_push($message, htmlspecialchars($post['email']));
             }
 
             if (strlen($post['texte']) < 3) {
