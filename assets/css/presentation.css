@@ -20,6 +20,10 @@
     box-shadow: 4px 4px 4px #ccc;
 }
 
+.presentation1 > .codewars {
+    margin-top: 5px;
+}
+
 .presentation2 {
     display: flex;
     flex-direction: column;

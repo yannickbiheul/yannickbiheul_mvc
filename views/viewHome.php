@@ -53,6 +53,7 @@ ob_start();
 <section id="presentation">
     <div class="presentation1">
         <img src="assets/images/moi.jpg" alt="Moi" data-aos="flip-up" data-aos-duration="2000">
+        <img class="codewars" src="https://www.codewars.com/users/yannickbiheul/badges/large" alt="profil-codewars">
     </div>
     <div class="presentation2" data-aos="fade-up" data-aos-duration="2000">
         <?= $texte ?>
