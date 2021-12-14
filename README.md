@@ -3,4 +3,5 @@
 - [deskad.fr](https://deskad.fr/) : Un projet de blog
 
 # Mes réseaux
-- <i class="fab fa-facebook-f"></i>
+- [Linkedin](https://www.linkedin.com/in/yannick-biheul-4451a917b/) [Twitter](https://twitter.com/LeBok29000) [Instagram](https://www.instagram.com/yannickbiheul/)
+
